@@ -1,7 +1,11 @@
 14 October 2018
+See Todo : think about the model and links between race/ruunner and consider fields for distance
 Created templates with simple index.html.
 Problem: database tables not created.
 Next step : create tables somehow
+Update: problem was I needed to specify 'runningsteve' folder (app) that had the models.py
+e.g. python manage.py makemigrations runningsteve
+Now adding data but need to make it work the way I like.
 13 October 2018
 Installed on laptop
 12 October 2018
