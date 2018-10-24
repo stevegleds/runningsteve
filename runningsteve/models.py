@@ -22,13 +22,18 @@ class Runner(models.Model):
 
 
 class Race(models.Model):
-    race_name = models.CharField('Race', max_length=20)
+    TERRAIN_TYPES = (
+        (0, 'Road'),
+        (1, 'Trail'),
+        (2, 'Multi')
+    )
+    race_name = models.CharField('Race', max_length=40)
     route_name = models.CharField('Route', max_length=20, null=True)
     route_distance = models.FloatField('Distance', null=True)
     route_units = models.CharField('Units', max_length=5)
-    terrain = models.CharField('Terrain', max_length=20, null=True)
+    terrain = models.IntegerField('Terrain', null=True, choices=TERRAIN_TYPES, default=0)
     race_date = models.DateTimeField('Date', null=True)
-    runner = models.ForeignKey(Runner, on_delete=models.CASCADE, null=True)
+    runner = models.ForeignKey(Runner, on_delete=models.CASCADE, null=True, default=1)
 
     def __str__(self):
         # return self.race_name, self.race_date, self.route_length, self.terrain, self.race_date, self.runner
