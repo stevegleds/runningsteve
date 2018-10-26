@@ -25,7 +25,7 @@ SECRET_KEY = 'd3_101==tru=v%jkhqk+22how0fa(hs8-46m2#fz-g4!(aqu$9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True  # todo remove when live
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['stevegleds.pythonanywhere.com',  '127.0.0.1', ]
 
 
 # Application definition
