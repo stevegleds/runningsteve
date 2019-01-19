@@ -1,3 +1,5 @@
+19 January 2019
+Re-familiarising myself with project.Minor changes.
 24 October 2018
 Installed on PC
 Added drop down list in race terrain field.
@@ -10,6 +12,7 @@ Next step : create tables somehow
 Update: problem was I needed to specify 'runningsteve' folder (app) that had the models.py
 e.g. python manage.py makemigrations runningsteve
 Now adding data but need to make it work the way I like.
+127.0.0.1:8000/admin
 13 October 2018
 Installed on laptop
 12 October 2018
