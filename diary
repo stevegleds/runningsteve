@@ -1,5 +1,17 @@
 28 March 2019
 Created googledocs branch to work with googlesheets. Idea is to load races on to website
+Installed:
+oauth2client
+gspread
+
+changed the spreadsheets.py file scope to include ../auth/drive:
+scope = ['https://spreadsheets.google.com/feeds',
+         'https://www.googleapis.com/auth/drive']
+
+successfully updated spreadsheet using sheet.update_cell(11,13,"test") This puts test in row 11 column 13
+todo: follow on from https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
+todo: look at http://www.indjango.com/access-google-sheets-in-python-using-gspread/
+todo: check if it is ok to load credentials json file to server
 19 January 2019
 Re-familiarising myself with project.Minor changes.
 24 October 2018
