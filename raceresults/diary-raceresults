@@ -1,0 +1,6 @@
+29 March 2019
+Created raceresults branch with purpose to test creating table of results using pandas
+Created raceresults branch with purpose to test creating table of results using pandas
+Created raceresults folder to store race results code
+Storing racersults templates in runningsteve folder (for now)
+Next step is to display dataframe in raceresults template.

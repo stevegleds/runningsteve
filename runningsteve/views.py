@@ -10,3 +10,8 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'runningsteve/index.html')
+
+
+def raceresults(request):
+    return render(request, 'runningsteve/raceresults.html')
+
