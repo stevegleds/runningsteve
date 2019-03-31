@@ -18,7 +18,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PackageRequirementsSettings">
-    <option name="requirementsPath" value="P:\pythoncode\myprojects\home\runningsteve\requirements" />
+    <option name="requirementsPath" value="C:\steveLocal\coding\myprojects\runningsteve\requirements.txt" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

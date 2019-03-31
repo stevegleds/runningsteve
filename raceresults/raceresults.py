@@ -9,6 +9,7 @@ def main():
     dfraceresults = pd.read_excel(results_file, encoding='ISO-8859-1')
     print(dfraceresults.head())
     print("results file:", results_file)
+    dfraceresults.to_html("raceresults.html")
 
 
 if __name__ == "__main__":

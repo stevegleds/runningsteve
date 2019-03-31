@@ -1,3 +1,6 @@
+31 March 2019
+Used df to html to create raceresults.html to create table
+Next is to integrate into as function in main site then add some filter option.
 29 March 2019
 Created raceresults branch with purpose to test creating table of results using pandas
 Created raceresults folder to store race results code

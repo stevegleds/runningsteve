@@ -1,4 +1,4 @@
-use pandas to get df
-show in terminal
-use pandas to html to create html table
+31 March 2019
+Used df to html to create raceresults.html to create table
+Next is to integrate into as function in main site then add some filter option.
 link to django template somehow
