@@ -1,6 +1,7 @@
-31 March 2019
-Used df to html to create raceresults.html to create table
-Next is to integrate into as function in main site then add some filter option.
+02 April 2019
+Added pace column using pace function.
+Next: change format of column to show as 8:45 not 00:08:45
+
 29 March 2019
 Created raceresults branch with purpose to test creating table of results using pandas
 Created raceresults folder to store race results code
