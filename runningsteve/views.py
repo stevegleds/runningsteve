@@ -13,5 +13,5 @@ def index(request):
 
 
 def raceresults(request):
-    return render(request, 'runningsteve/raceresults.html')
+    return render(request, 'raceresults/../raceresults/raceresults.html')
 

@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from . import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('raceresults', views.raceresults, name='raceresults'),
     path('admin/', admin.site.urls),
+    path('raceresults/raceresults', TemplateView.as_view(template_name="raceresults/raceresults.htnl"))
 ]

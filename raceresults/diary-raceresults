@@ -1,3 +1,8 @@
+Moved raceresults.html to folder in templates
+from django.views.generic import TemplateView
+Needed:
+path('raceresults/raceresults', TemplateView.as_view(template_name="raceresults/raceresults.htnl"))
+07 April 2019
 29 March 2019
 Created raceresults branch with purpose to test creating table of results using pandas
 Created raceresults branch with purpose to test creating table of results using pandas
