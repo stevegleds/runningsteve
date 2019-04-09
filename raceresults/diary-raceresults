@@ -1,3 +1,7 @@
+09 April 2019
+Changed format of columns in html and uploaded to http://gledhill.xyz/sg/running/raceresults.html
+Need to make climb and effort integers
+************
 Moved raceresults.html to folder in templates
 from django.views.generic import TemplateView
 Needed:
