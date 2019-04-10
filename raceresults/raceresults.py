@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 data_dir = os.getcwd()
-results_file = data_dir+'\\racessummary20190329.xlsx'
+results_file = data_dir+'\\racessummary20190410.xlsx'
 
 
 def pace(time):
