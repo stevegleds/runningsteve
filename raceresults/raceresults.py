@@ -12,16 +12,18 @@ def pace(time):
 
 def get_race_results():
     dfraceresults = pd.read_excel(results_file, encoding='ISO-8859-1')
+    dfraceresults = dfraceresults.fillna("")
     dfraceresults['Date'] = pd.to_datetime(dfraceresults['Date']).dt.strftime("%d %b %y")
-    # dfraceresults['Climb FT'] = dfraceresults['Climb FT'].astype(int)
+    dfraceresults['Climb FT'] = pd.to_numeric(dfraceresults['Climb FT'])
+    dfraceresults['Effort'] = pd.to_numeric(dfraceresults['Effort'])
     print(dfraceresults.head())
+    print(dfraceresults.dtypes)
     print("results file:", results_file)
-    # dfraceresults.to_html("raceresults.html")
     response = input("Calculate pace? Y/y \n")
     if response.lower() == 'y':
         dfraceresults['Pace'] = (pd.to_timedelta(dfraceresults.Time) / dfraceresults.Miles)
         dfraceresults['Pace'] = pd.to_datetime(dfraceresults['Pace']).dt.strftime("%M:%S")
-    dfraceresults_html = dfraceresults.round({"Climb FT": 0, "Miles": 2,  "Pace": 0})
+    dfraceresults_html = dfraceresults.round({"Climb FT": 0, "Miles": 2})
     dfraceresults_html.to_html("raceresults.html")
 
 
