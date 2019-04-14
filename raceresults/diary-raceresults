@@ -1,3 +1,5 @@
+14 April 2019
+round.(0).astype(int) worked . still not ideal
 11 April 2019
 Still trying to get the layout correct.
 Changed Climb and effort to numbers so should be able to round. Works for miles
@@ -18,5 +20,5 @@ path('raceresults/raceresults', TemplateView.as_view(template_name="raceresults/
 Created raceresults branch with purpose to test creating table of results using pandas
 Created raceresults branch with purpose to test creating table of results using pandas
 Created raceresults folder to store race results code
-Storing racersults templates in runningsteve folder (for now)
+Storing raceresults templates in runningsteve folder (for now)
 Next step is to display dataframe in raceresults template.
