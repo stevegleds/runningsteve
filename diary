@@ -1,3 +1,6 @@
+15 April 2019
+Added temp directory to use science sample in scientific mode
+Looks good. Uses Matplotlib.
 02 April 2019
 Added pace column using pace function.
 Next: change format of column to show as 8:45 not 00:08:45
