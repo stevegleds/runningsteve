@@ -8,6 +8,17 @@ results_page = 'my_race_results.html'
 others_results_file = data_dir+'\\racesothers.xlsx'
 others_results_page = 'others_race_results.html'
 
+pd.set_option('colheader_justify', 'center')   # FOR TABLE <th>
+
+html_string = '''
+<html>
+  <head><title>HTML Pandas Dataframe with CSS</title></head>
+  <link rel="stylesheet" type="text/css" href="df_style.css"/>
+  <body>
+    {table}
+  </body>
+</html>.
+'''
 
 def pace(time):
     return pd.to_timedelta(time) / 2
@@ -29,9 +40,13 @@ def get_race_results(results, webpage):
         dfraceresults['Pace'] = pd.to_datetime(dfraceresults['Pace']).dt.strftime("%M:%S")
     dfraceresults_html = dfraceresults.round({"Climb FT": 0, "Miles": 2})
     dfraceresults_html.to_html(webpage)
+    with open(webpage, 'w') as f:
+        f.write(html_string.format(table=dfraceresults_html.to_html(classes='mystyle')))
     dfraceresults_html = dfraceresults.sort_values(by=['Pace'])
     webpage = 'pace_'+webpage
-    dfraceresults_html.to_html(webpage)
+    dfraceresults_html.to_html(webpage, classes='mystle')
+    with open(webpage, 'w') as f:
+        f.write(html_string.format(table=dfraceresults_html.to_html(classes='mystyle')))
 
 
 if __name__ == "__main__":
