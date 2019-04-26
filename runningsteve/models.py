@@ -33,12 +33,11 @@ class Race(models.Model):
     route_units = models.CharField('Units', max_length=5)
     terrain = models.IntegerField('Terrain', null=True, choices=TERRAIN_TYPES, default=0)
     race_date = models.DateTimeField('Date', null=True)
-    runner = models.ForeignKey(Runner, on_delete=models.CASCADE, null=True, default=1)
 
     def __str__(self):
         # return self.race_name, self.race_date, self.route_length, self.terrain, self.race_date, self.runner
-        return f"{self.race_name, self.route_name, self.route_distance, self.terrain, self.race_date, self.runner}"
+        return f"{self.race_name, self.route_name, self.route_distance, self.terrain, self.race_date}"
 
     def __repr__(self):
         # return self.race_name, self.race_date, self.route_length, self.terrain, self.race_date, self.runner
-        return f"{self.race_name, self.route_name, self.route_distance, self.terrain, self.race_date, self.runner}"
+        return f"{self.race_name, self.route_name, self.route_distance, self.terrain, self.race_date}"

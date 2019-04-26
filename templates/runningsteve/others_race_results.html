@@ -1,0 +1,233 @@
+
+<html>
+  <head><title>HTML Pandas Dataframe with CSS</title></head>
+  <link rel="stylesheet" type="text/css" href="df_style.css"/>
+  <body>
+    <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Course</th>
+      <th>Miles</th>
+      <th>Time</th>
+      <th>Climb FT</th>
+      <th>Age Grade</th>
+      <th>Notes</th>
+      <th>Category</th>
+      <th>Effort</th>
+      <th>Overall #</th>
+      <th>Runners</th>
+      <th>Gender #</th>
+      <th>digitime</th>
+      <th>Min / M</th>
+      <th>Pos %</th>
+      <th>Age #</th>
+      <th>Points</th>
+      <th>Pace</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Aimee</td>
+      <td>20 Apr 19</td>
+      <td>Barnsley Parkrun</td>
+      <td>3.11</td>
+      <td>00:39:43</td>
+      <td>318</td>
+      <td>45.61%</td>
+      <td>PB</td>
+      <td>JW10</td>
+      <td>100</td>
+      <td>192</td>
+      <td>201</td>
+      <td>76</td>
+      <td>#NAME?</td>
+      <td>#NAME?</td>
+      <td>4%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>12:46</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Aimee</td>
+      <td>18 Aug 18</td>
+      <td>Barnsley Parkrun</td>
+      <td>3.11</td>
+      <td>00:45:18</td>
+      <td>318</td>
+      <td>39.99%</td>
+      <td>NaN</td>
+      <td>JW10</td>
+      <td>100</td>
+      <td>200</td>
+      <td>203</td>
+      <td>66</td>
+      <td>#NAME?</td>
+      <td>#NAME?</td>
+      <td>1%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>14:33</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Baylee</td>
+      <td>20 Apr 19</td>
+      <td>Barnsley Parkrun</td>
+      <td>3.11</td>
+      <td>00:27:15</td>
+      <td>318</td>
+      <td>53.21%</td>
+      <td>PB</td>
+      <td>JM11-14</td>
+      <td>100</td>
+      <td>81</td>
+      <td>201</td>
+      <td>67</td>
+      <td>#NAME?</td>
+      <td>#NAME?</td>
+      <td>60%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>08:45</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Baylee</td>
+      <td>18 Aug 18</td>
+      <td>Barnsley Parkrun</td>
+      <td>3.11</td>
+      <td>00:28:46</td>
+      <td>318</td>
+      <td>51.68%</td>
+      <td>NaN</td>
+      <td>JM11-14</td>
+      <td>100</td>
+      <td>123</td>
+      <td>203</td>
+      <td>100</td>
+      <td>#NAME?</td>
+      <td>#NAME?</td>
+      <td>39%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>09:14</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Baylee</td>
+      <td>31 Mar 18</td>
+      <td>Barnsley Parkrun</td>
+      <td>3.11</td>
+      <td>00:34:15</td>
+      <td>318</td>
+      <td>43.41%</td>
+      <td>NaN</td>
+      <td>JM11-14</td>
+      <td>100</td>
+      <td>136</td>
+      <td>164</td>
+      <td>101</td>
+      <td>#NAME?</td>
+      <td>#NAME?</td>
+      <td>17%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>11:00</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Taylor</td>
+      <td>20 Apr 19</td>
+      <td>Barnsley Parkrun</td>
+      <td>3.11</td>
+      <td>00:30:21</td>
+      <td>318</td>
+      <td>48.98%</td>
+      <td>PB</td>
+      <td>JM11-14</td>
+      <td>100</td>
+      <td>126</td>
+      <td>201</td>
+      <td>93</td>
+      <td>#NAME?</td>
+      <td>#NAME?</td>
+      <td>37%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>09:45</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Taylor</td>
+      <td>18 Aug 18</td>
+      <td>Barnsley Parkrun</td>
+      <td>3.11</td>
+      <td>00:35:29</td>
+      <td>318</td>
+      <td>43.12%</td>
+      <td>NaN</td>
+      <td>JM11-14</td>
+      <td>100</td>
+      <td>181</td>
+      <td>203</td>
+      <td>129</td>
+      <td>#NAME?</td>
+      <td>#NAME?</td>
+      <td>11%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>11:24</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Taylor</td>
+      <td>14 Apr 18</td>
+      <td>Barnsley Parkrun</td>
+      <td>3.11</td>
+      <td>00:34:08</td>
+      <td>318</td>
+      <td>44.82%</td>
+      <td>NaN</td>
+      <td>JM11-14</td>
+      <td>100</td>
+      <td>138</td>
+      <td>184</td>
+      <td>98</td>
+      <td>#NAME?</td>
+      <td>#NAME?</td>
+      <td>25%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10:58</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Taylor</td>
+      <td>31 Mar 18</td>
+      <td>Barnsley Parkrun</td>
+      <td>3.11</td>
+      <td>00:36:06</td>
+      <td>318</td>
+      <td>42.38%</td>
+      <td>NaN</td>
+      <td>JM11-14</td>
+      <td>100</td>
+      <td>143</td>
+      <td>164</td>
+      <td>103</td>
+      <td>#NAME?</td>
+      <td>#NAME?</td>
+      <td>13%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>11:36</td>
+    </tr>
+  </tbody>
+</table>
+  </body>
+</html>.
