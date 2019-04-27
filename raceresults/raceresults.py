@@ -12,7 +12,7 @@ pd.set_option('colheader_justify', 'center')   # FOR TABLE <th>
 
 html_string = '''
 <html>
-  <head><title>HTML Pandas Dataframe with CSS</title></head>
+  <head><title>Race Results</title></head>
   <link rel="stylesheet" type="text/css" href="df_style.css"/>
   <body>
     {table}
@@ -30,6 +30,7 @@ def get_race_results(results, webpage, runners):
     dfraceresults['Effort'] = dfraceresults['Effort'].fillna(-1)
     dfraceresults['Climb FT'] = dfraceresults['Climb FT'].fillna(-1)
     dfraceresults['Date'] = pd.to_datetime(dfraceresults['Date']).dt.strftime("%d %b %y")
+    dfraceresults['Date'] = dfraceresults['Date'].astype('datetime64[ns]')
     dfraceresults['Climb FT'] = dfraceresults['Climb FT'].round(0).astype(int)
     dfraceresults['Effort'] = dfraceresults['Effort'].round(0).astype(int)
     # print(dfraceresults.dtypes)
@@ -44,7 +45,13 @@ def get_race_results(results, webpage, runners):
                 'Category', 'Overall #', 'Runners']
     print(cols)
     dfraceresults = dfraceresults[cols]
+    if runners == 'mine':
+        dfraceresults = dfraceresults.sort_values(by='Date', ascending=False)
+    else:
+        dfraceresults = dfraceresults.sort_values(by='Date', ascending=False)
+        dfraceresults = dfraceresults.sort_values(by='Name')
     dfraceresults_html = dfraceresults.round({"Climb FT": 0, "Miles": 2})
+
     dfraceresults_html.to_html(webpage)
     with open(webpage, 'w') as f:
         f.write(html_string.format(table=dfraceresults_html.to_html(classes='mystyle')))
