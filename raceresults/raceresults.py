@@ -25,7 +25,7 @@ def pace(time):
     return pd.to_timedelta(time) / 2
 
 
-def get_race_results(results, webpage):
+def get_race_results(results, webpage, runners):
     dfraceresults = pd.read_csv(results, encoding='ISO-8859-1')
     dfraceresults['Effort'] = dfraceresults['Effort'].fillna(-1)
     dfraceresults['Climb FT'] = dfraceresults['Climb FT'].fillna(-1)
@@ -37,6 +37,13 @@ def get_race_results(results, webpage):
     print("results file:", results_file)
     dfraceresults['Pace'] = (pd.to_timedelta(dfraceresults.Time) / dfraceresults.Miles)
     dfraceresults['Pace'] = pd.to_datetime(dfraceresults['Pace']).dt.strftime("%M:%S")
+    if runners == 'mine':
+        cols = ['Date', 'Course', 'Miles', 'Pace', 'Time', 'Climb FT', 'Effort', 'Notes']
+    else:
+        cols = ['Name', 'Date', 'Course', 'Miles', 'Pace', 'Time', 'Climb FT', 'Age Grade', 'Notes',
+                'Category', 'Overall #', 'Runners']
+    print(cols)
+    dfraceresults = dfraceresults[cols]
     dfraceresults_html = dfraceresults.round({"Climb FT": 0, "Miles": 2})
     dfraceresults_html.to_html(webpage)
     with open(webpage, 'w') as f:
@@ -49,5 +56,5 @@ def get_race_results(results, webpage):
 
 
 if __name__ == "__main__":
-    get_race_results(results_file, results_page)
-    get_race_results(others_results_file, others_results_page)
+    get_race_results(results_file, results_page, 'mine')
+    get_race_results(others_results_file, others_results_page, 'others')
