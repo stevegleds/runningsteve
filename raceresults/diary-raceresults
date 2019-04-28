@@ -1,3 +1,5 @@
+28 April 2019
+Updated to better manage dates by creating a datetime field for date type and date field for display
 27 April 2019
 Updated results pages to include links to parkrun site for each runner
 TODO change format of dates
