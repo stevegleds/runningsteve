@@ -1,3 +1,5 @@
+28 April 2019
+Copied my race rsults to raceresults folder for django app
 26 April 2019
 Working with raceresults to use csv generated from myruns.xlsx via VBA
 Had problem with migrations so recreated database.
