@@ -14,6 +14,24 @@ html_string = '''
 <html>
   <head><title>Race Results</title></head>
   <link rel="stylesheet" type="text/css" href="df_style.css"/>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Results</th>
+      <th>Sort By Pace</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="my_race_results.html">My Race Results</a></td>
+      <td><a href="pace_my_race_results.html">Sorted by Pace</a></td>
+    </tr>
+        <tr>
+      <td><a href="others_race_results.html">Other Race Results</a></td>
+      <td><a href="pace_others_race_results.html">Sorted by Pace</a></td>
+    </tr>
+  </tbody>
+</table>
   <body>
     {table}
   </body>
@@ -40,6 +58,7 @@ def get_race_results(results, webpage, runners):
     print("results file:", results_file)
     dfraceresults['Pace'] = (pd.to_timedelta(dfraceresults.Time) / dfraceresults.Miles)
     dfraceresults['Pace'] = pd.to_datetime(dfraceresults['Pace']).dt.strftime("%M:%S")
+    dfraceresults['Notes'] = dfraceresults['Notes'].fillna(value='')
     if runners == 'mine':
         cols = ['Date', 'Course', 'Miles', 'Pace', 'Time', 'Climb FT', 'Effort', 'Notes', 'Datetime']
     else:
@@ -58,6 +77,7 @@ def get_race_results(results, webpage, runners):
     with open(webpage, 'w') as f:
         f.write(html_string.format(table=dfraceresults_html.to_html(classes='mystyle')))
     dfraceresults_html = dfraceresults.sort_values(by=['Pace'])
+    dfraceresults_html = dfraceresults_html[cols[:-1]]
     webpage = 'pace_'+webpage
     dfraceresults_html.to_html(webpage, classes='mystle')
     with open(webpage, 'w') as f:
