@@ -72,7 +72,7 @@ def get_race_results(results, webpage, runners):
         dfraceresults = dfraceresults.sort_values(by='Datetime', ascending=False)
     else:
         dfraceresults = dfraceresults.sort_values(by='Datetime', ascending=False)
-        dfraceresults = dfraceresults.sort_values(by='Name')
+        # dfraceresults = dfraceresults.sort_values(by='Name')
     dfraceresults_html = dfraceresults.round({"Climb FT": 0, "Miles": 2})
     dfraceresults_html = dfraceresults_html[cols[:-1]]
     dfraceresults_html.to_html(webpage)
