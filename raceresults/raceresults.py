@@ -32,6 +32,10 @@ html_string = '''
           <div class="mui-panel">Others
         <button class="mui-btn mui-btn--raised"><a href="others_race_results.html">Sort by Date</a></a> </button>
         <button class="mui-btn mui-btn--raised"><a href="pace_others_race_results.html">Sort by Pace</a> </button>
+        <button class="mui-btn mui-btn--raised"><a href="#"></a> </button>
+        <button class="mui-btn mui-btn--raised"><a href="baylee_pace_others_race_results.html">Baylee</a> </button>
+        <button class="mui-btn mui-btn--raised"><a href="taylor_pace_others_race_results.html">Aimee</a> </button>
+        <button class="mui-btn mui-btn--raised"><a href="aimee_pace_others_race_results.html">Taylor</a> </button>
     </div>
     <hr>
    <body>
@@ -81,9 +85,29 @@ def get_race_results(results, webpage, runners):
     dfraceresults_html = dfraceresults.sort_values(by=['Pace'])
     dfraceresults_html = dfraceresults_html[cols[:-1]]
     webpage = 'pace_'+webpage
-    dfraceresults_html.to_html(webpage, classes='mystle')
+    dfraceresults_html.to_html(webpage, classes='mystyle')
     with open(webpage, 'w') as f:
         f.write(html_string.format(table=dfraceresults_html.to_html(classes='mystyle')))
+    #  create filter pages
+    if runners != 'mine':
+        # Baylee
+        personalwebpage = 'baylee_'+webpage
+        dfraceresultsbaylee_html = dfraceresults_html[dfraceresults_html['Name'] == 'Baylee'].sort_values(by=['Pace'])
+        dfraceresultsbaylee_html.to_html(personalwebpage, classes='mystyle')
+        with open(personalwebpage, 'w') as f:
+            f.write(html_string.format(table=dfraceresultsbaylee_html.to_html(classes='mystyle')))
+        # Taylor
+        personalwebpage = 'taylor_'+webpage
+        dfraceresultstaylor_html = dfraceresults_html[dfraceresults_html['Name'] == 'Taylor'].sort_values(by=['Pace'])
+        dfraceresultstaylor_html.to_html(personalwebpage, classes='mystyle')
+        with open(personalwebpage, 'w') as f:
+            f.write(html_string.format(table=dfraceresultstaylor_html.to_html(classes='mystyle')))
+        # Aimee
+        personalwebpage = 'aimee_'+webpage
+        dfraceresultsaimee_html = dfraceresults_html[dfraceresults_html['Name'] == 'Aimee'].sort_values(by=['Pace'])
+        dfraceresultsaimee_html.to_html(personalwebpage, classes='mystyle')
+        with open(personalwebpage, 'w') as f:
+            f.write(html_string.format(table=dfraceresultsaimee_html.to_html(classes='mystyle')))
 
 
 if __name__ == "__main__":
