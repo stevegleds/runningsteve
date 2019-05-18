@@ -27,6 +27,7 @@ html_string = '''
       <div class="mui-panel">Steve
         <button class="mui-btn mui-btn--raised"><a href="my_race_results.html">Sort by Date</a></a> </button>
         <button class="mui-btn mui-btn--raised"><a href="pace_my_race_results.html">Sort by Pace</a> </button>
+        
     </div>
     <hr>
           <div class="mui-panel">Others
@@ -34,8 +35,8 @@ html_string = '''
         <button class="mui-btn mui-btn--raised"><a href="pace_others_race_results.html">Sort by Pace</a> </button>
         <button class="mui-btn mui-btn--raised"><a href="#"></a> </button>
         <button class="mui-btn mui-btn--raised"><a href="baylee_pace_others_race_results.html">Baylee</a> </button>
-        <button class="mui-btn mui-btn--raised"><a href="taylor_pace_others_race_results.html">Aimee</a> </button>
-        <button class="mui-btn mui-btn--raised"><a href="aimee_pace_others_race_results.html">Taylor</a> </button>
+        <button class="mui-btn mui-btn--raised"><a href="taylor_pace_others_race_results.html">Taylor</a> </button>
+        <button class="mui-btn mui-btn--raised"><a href="aimee_pace_others_race_results.html">Aimee</a> </button>
     </div>
     <hr>
    <body>
