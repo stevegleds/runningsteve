@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
 import os
-
-data_dir = os.getcwd()
-results_file = data_dir+'\\MyRaces.csv'
+dir = os.getcwd()
+data_dir = dir+'\\raceresults\\'
+os.chdir(data_dir)
+print('Data dir is: ', data_dir)
+results_file = data_dir+'MyRaces.csv'
 results_page = 'my_race_results.html'
-others_results_file = data_dir+'\\OtherRaces.csv'
+others_results_file = data_dir+'OtherRaces.csv'
 others_results_page = 'others_race_results.html'
 
 pd.set_option('colheader_justify', 'center')   # FOR TABLE <th>
