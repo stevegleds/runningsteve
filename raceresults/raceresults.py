@@ -73,7 +73,7 @@ def get_race_results(results, webpage, runners):
         cols = ['Date', 'Course', 'Miles', 'Pace', 'Time', 'Climb FT', 'Effort', 'Notes', 'Datetime']
     else:
         print('Producing other race results columns list')
-        cols = ['Name', 'Date', 'Course', 'Notes', 'Pace', 'Age Grade', 'Climb FT', 'Miles', 'Time',   
+        cols = ['Name', 'Date', 'Course', 'Notes', 'Time', 'Pace', 'Age Grade', 'Climb FT', 'Miles',    
                 'Category', 'Overall #', 'Runners', 'Datetime']
     print(cols)
     # dfraceresults = dfraceresults[cols]
