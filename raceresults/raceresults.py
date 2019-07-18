@@ -64,21 +64,27 @@ def get_race_results(results, webpage, runners):
     dfraceresults['Effort'] = dfraceresults['Effort'].round(0).astype(int)
     # print(dfraceresults.dtypes)
     # print(dfraceresults.head())
-    print("results file:", results_file)
+    # print("results file:", results_file)
     dfraceresults['Pace'] = (pd.to_timedelta(dfraceresults.Time) / dfraceresults.Miles)
     dfraceresults['Pace'] = pd.to_datetime(dfraceresults['Pace']).dt.strftime("%M:%S")
     dfraceresults['Notes'] = dfraceresults['Notes'].fillna(value='')
     if runners == 'mine':
+        print('producing my race results columns list')
         cols = ['Date', 'Course', 'Miles', 'Pace', 'Time', 'Climb FT', 'Effort', 'Notes', 'Datetime']
     else:
-        cols = ['Name', 'Date', 'Course', 'Miles', 'Pace', 'Time', 'Climb FT', 'Age Grade', 'Notes',
+        print('Producing other race results columns list')
+        cols = ['Name', 'Date', 'Course', 'Notes', 'Pace', 'Age Grade', 'Climb FT', 'Miles', 'Time',   
                 'Category', 'Overall #', 'Runners', 'Datetime']
     print(cols)
     # dfraceresults = dfraceresults[cols]
     if runners == 'mine':
+        print('Starting results for me')
         dfraceresults = dfraceresults.sort_values(by='Datetime', ascending=False)
+        print('Ending my results')
     else:
+        print('starting other results')
         dfraceresults = dfraceresults.sort_values(by='Datetime', ascending=False)
+        print('finished other results')
         # dfraceresults = dfraceresults.sort_values(by='Name')
     dfraceresults_html = dfraceresults.round({"Climb FT": 0, "Miles": 2})
     dfraceresults_html = dfraceresults_html[cols[:-1]]
