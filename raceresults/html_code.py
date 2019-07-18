@@ -24,6 +24,8 @@ html_string = '''
     </div>
     <hr>
           <div class="mui-panel">Others
+        <button class="mui-btn mui-btn--raised"><a href="summary_pace_others_race_results.html">Personal Best Times</a></a> </button>
+        <button class="mui-btn mui-btn--raised"><a href="#"></a> </button>
         <button class="mui-btn mui-btn--raised"><a href="others_race_results.html">Sort by Date</a></a> </button>
         <button class="mui-btn mui-btn--raised"><a href="pace_others_race_results.html">Sort by Pace</a> </button>
         <button class="mui-btn mui-btn--raised"><a href="#"></a> </button>
