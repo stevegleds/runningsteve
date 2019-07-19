@@ -21,13 +21,13 @@ def get_race_results(results, webpage, runners):
     # dfraceresults = dfraceresults[cols]
     if runners == 'mine':
         print('Starting results for me')
-        # dfraceresults = dfraceresults.sort_values(by='Datetime', ascending=False)
+        dfraceresults = dfraceresults.sort_values(by='Datetime', ascending=False)
         print('Ending my results')
-        dfraceresults = dfraceresults.groupby(["Course"]).apply(lambda x: x.sort_values(["Pace"], ascending = True)).reset_index(drop=True)
+        # dfraceresults = dfraceresults.groupby(["Course"]).apply(lambda x: x.sort_values(["Pace"], ascending = True)).reset_index(drop=True)
     else:
         print('starting other results')
-        # dfraceresults = dfraceresults.sort_values(by='Datetime', ascending=False)
-        dfraceresults = dfraceresults.groupby(["Name"]).apply(lambda x: x.sort_values(["Pace"], ascending = True)).reset_index(drop=True)
+        dfraceresults = dfraceresults.sort_values(by='Datetime', ascending=False)
+        # dfraceresults = dfraceresults.groupby(["Name"]).apply(lambda x: x.sort_values(["Pace"], ascending = True)).reset_index(drop=True)
         print(dfraceresults.head())
         # dfraceresults = dfraceresults.sort_values(by='Name')
     create_html_pages(dfraceresults, runners, cols, webpage)
