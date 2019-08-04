@@ -40,7 +40,7 @@ def format_dataframe(dfraceresults):
     Replace 'na' with '-1' or '' to prevent type errors
     Create a Datetime field from the date in the csv to use in sorting / delta etc
     Then use the new Datetime field to replace 'Date' with required format for displaying
-    Only need Climb Ft / Effort to whole numbers
+    Only need Climb Ft and Effort to whole numbers
     Create 'Pace' field from time and miles and format as mm:ss
     
     '''
