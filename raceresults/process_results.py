@@ -12,10 +12,10 @@ def get_race_results(results, webpage, runners):
     dfraceresults = format_dataframe(dfraceresults)
     if runners == 'mine':
         print('producing my race results columns list')
-        cols = ['Date', 'Course', 'Miles', 'Pace', 'Time', 'Climb FT', 'Effort', 'Notes', 'Datetime']
+        cols = ['Date', 'Course', 'Miles', 'Pace', 'Time', 'Gradient %', 'Climb FT', 'Effort', 'Notes', 'Datetime']
     else:
         print('Producing other race results columns list')
-        cols = ['Name', 'Date', 'Course', 'Notes', 'Time', 'Pace', 'Age Grade', 'Climb FT', 'Miles',    
+        cols = ['Name', 'Date', 'Course', 'Notes', 'Time', 'Pace', 'Age Grade', 'Gradient %', 'Climb FT', 'Miles',    
                 'Category', 'Overall #', 'Runners', 'Datetime']
     print(cols)
     # dfraceresults = dfraceresults[cols]
@@ -42,7 +42,7 @@ def format_dataframe(dfraceresults):
     Then use the new Datetime field to replace 'Date' with required format for displaying
     Only need Climb Ft and Effort to whole numbers
     Create 'Pace' field from time and miles and format as mm:ss
-    
+    Gradient is % of climb over total distance    
     '''
     dfraceresults['Effort'] = dfraceresults['Effort'].fillna(-1)
     dfraceresults['Climb FT'] = dfraceresults['Climb FT'].fillna(-1)
@@ -52,6 +52,7 @@ def format_dataframe(dfraceresults):
     dfraceresults['Effort'] = dfraceresults['Effort'].round(0).astype(int)
     dfraceresults['Pace'] = (pd.to_timedelta(dfraceresults.Time) / dfraceresults.Miles)
     dfraceresults['Pace'] = pd.to_datetime(dfraceresults['Pace']).dt.strftime("%M:%S")
+    dfraceresults['Gradient %'] = dfraceresults['Climb FT'] / dfraceresults['Miles'] / 5280 * 100
     dfraceresults['Notes'] = dfraceresults['Notes'].fillna(value='')
     return dfraceresults
 
