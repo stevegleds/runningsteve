@@ -2,9 +2,11 @@ import os
 from process_results import get_race_results
 
 dir = os.getcwd()
+print("first dir is:", dir)
 data_dir = dir+'\\raceresults\\'
+print("data_dir directory is: ", data_dir)
 os.chdir(data_dir)
-print('Data dir is: ', data_dir)
+print('second dir is: ', os.getcwd())
 results_file = data_dir+'MyRaces.csv'
 results_page = 'my_race_results.html'
 others_results_file = data_dir+'OtherRaces.csv'
