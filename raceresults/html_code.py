@@ -25,10 +25,10 @@ html_string = '''
     <hr>
           <div class="mui-panel">Others
         <button class="mui-btn mui-btn--raised"><a href="summary_pace_others_race_results.html">Personal Best Times</a></a> </button>
-        <button class="mui-btn mui-btn--raised"><a href="http://gledhill.xyz/sg/running/">Parkrun</a> </button>
+        <button class="mui-btn mui-btn--raised"><a href="http://gledhill.xyz/index.html/">Parkrun</a> </button>
         <button class="mui-btn mui-btn--raised"><a href="others_race_results.html">Sort by Date</a></a> </button>
         <button class="mui-btn mui-btn--raised"><a href="pace_others_race_results.html">Sort by Pace</a> </button>
-        <button class="mui-btn mui-btn--raised"><a href="http://gledhill.xyz/sg/running/"></a> </button>
+        <button class="mui-btn mui-btn--raised"><a href="http://gledhill.xyz/index.html"></a> </button>
         <button class="mui-btn mui-btn--raised"><a href="baylee_pace_others_race_results.html">Baylee</a> </button>
         <button class="mui-btn mui-btn--raised"><a href="taylor_pace_others_race_results.html">Taylor</a> </button>
         <button class="mui-btn mui-btn--raised"><a href="aimee_pace_others_race_results.html">Aimee</a> </button>
