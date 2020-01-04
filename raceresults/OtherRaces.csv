@@ -1,30 +1,32 @@
-Name,Date,Course,Time,Notes,Age Grade,Climb FT,Miles,Category,Effort,Overall #,Runners,Gender #,,,,,,,,,,,,,,,,,,,,,,,,
-Aimee,18-May-19,Temple Newsam Parkrun,0:51:39,,35.08%,256,3.11,JW10,50,213,220,95,,,,,,,,,,,,,,,,,,,,,,,,
-Aimee,13-Jul-19,Conyngham Hall Parkrun,0:46:04,CB Conyngham,39.33%,243,3.11,JW10,80,175,179,66,,,,,,,,,,,,,,,,,,,,,,,,
-Aimee,18-Aug-18,Barnsley Parkrun,0:45:18,,39.99%,318,3.11,JW10,100,200,203,66,,,,,,,,,,,,,,,,,,,,,,,,
-Aimee,27-Apr-19,Temple Newsam Parkrun,0:44:17,CB Temple Newsam,40.91%,256,3.11,JW10,100,153,161,64,,,,,,,,,,,,,,,,,,,,,,,,
-Aimee,01-Jun-19,Barnsley Parkrun,0:44:12,,40.99%,318,3.11,JW10,90,243,259,96,,,,,,,,,,,,,,,,,,,,,,,,
-Aimee,20-Apr-19,Barnsley Parkrun,0:39:43,PB Barnsley,45.61%,318,3.11,JW10,100,192,201,76,,,,,,,,,,,,,,,,,,,,,,,,
-Baylee,31-Mar-18,Barnsley Parkrun,0:34:15,,43.41%,318,3.11,JM11-14,100,136,164,101,,,,,,,,,,,,,,,,,,,,,,,,
-Baylee,18-Aug-18,Barnsley Parkrun,0:28:46,,51.68%,318,3.11,JM11-14,100,123,203,100,,,,,,,,,,,,,,,,,,,,,,,,
-Baylee,20-Apr-19,Barnsley Parkrun,0:27:15,,53.21%,318,3.11,JM11-14,100,81,201,67,,,,,,,,,,,,,,,,,,,,,,,,
-Baylee,01-Jun-19,Barnsley Parkrun,0:26:59,CB Barnsley,53.74%,318,3.11,JM11-14,100,87,259,76,,,,,,,,,,,,,,,,,,,,,,,,
-Baylee,13-Jul-19,Conyngham Hall Parkrun,0:26:32,CB Conyngham,54.65%,243,3.11,JM11-14,,53,179,49,,,,,,,,,,,,,,,,,,,,,,,,
-Baylee,27-Apr-19,Temple Newsam Parkrun,0:26:01,,55.73%,256,3.11,JM11-14,100,40,161,36,,,,,,,,,,,,,,,,,,,,,,,,
-Baylee,18-May-19,Temple Newsam Parkrun,0:25:07,CB Temple Newsam,57.73%,256,3.11,JM11-14,100,45,220,40,,,,,,,,,,,,,,,,,,,,,,,,
-Kate,18-May-19,Temple Newsam Parkrun,0:52:01,PB Temple Newsam,28.93%,256,3.11,VW35-39,100,214,220,96,,,,,,,,,,,,,,,,,,,,,,,,
-Stephen,18-May-19,Temple Newsam Parkrun,0:52:05,PB Temple Newsam,26.21%,256,3.11,VM40-44,90,215,220,119,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,31-Mar-18,Barnsley Parkrun,0:36:06,,42.38%,318,3.11,JM11-14,100,143,164,103,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,18-Aug-18,Barnsley Parkrun,0:35:29,,43.12%,318,3.11,JM11-14,100,181,203,129,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,14-Apr-18,Barnsley Parkrun,0:34:08,,44.82%,318,3.11,JM11-14,100,138,184,98,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,27-Apr-19,Temple Newsam Parkrun,0:32:04,,46.36%,256,3.11,JM11-14,100,102,161,72,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,13-Jul-19,Conyngham Hall Parkrun,0:31:52,CB Conyngham,46.65%,243,3.11,JM11-14,100,104,179,77,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,01-Jun-19,Barnsley Parkrun,0:30:48,,48.27%,318,3.11,JM11-14,100,124,259,100,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,20-Apr-19,Barnsley Parkrun,0:30:21,CB Barnsley,48.98%,318,3.11,JM11-14,100,126,201,93,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,18-May-19,Temple Newsam Parkrun,0:29:24,PB Temple Newsam,50.57%,256,3.11,JM11-14,100,107,220,86,,,,,,,,,,,,,,,,,,,,,,,,
-Aimee,20-Jul-19,Conyngham Hall Parkrun,0:51:32,,35.16%,243,3.11,JW10,80,174,176,61,,,,,,,,,,,,,,,,,,,,,,,,
-Baylee,03-Aug-19,Harrogate parkrun,0:24:01,PB Harrogate parkrun,60.37%,82,3.11,JM11-14,100,97,424,89,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,03-Aug-19,Harrogate parkrun,0:29:54,CB Harrogate,49.72%,82,3.11,JM11-14,100,265,424,192,,,,,,,,,,,,,,,,,,,,,,,,
-Aimee,03-Aug-19,Harrogate parkrun,0:45:39,CB Harrogate,38.44%,82,3.11,JW10,80,415,424,163,,,,,,,,,,,,,,,,,,,,,,,,
-Baylee,07-Sep-19,Conyngham Hall Parkrun,0:29:05,,49.86%,243,3.11,JM11-14,80,92,179,72,,,,,,,,,,,,,,,,,,,,,,,,
-Taylor,07-Sep-19,Conyngham Hall Parkrun,0:29:27,CB Conyngham,50.48%,243,3.11,JM11-14,100,102,179,78,,,,,,,,,,,,,,,,,,,,,,,,
+Name,Date,Course,Time,Notes,Age Grade,Climb FT,Miles,Category,Effort,Overall #,Runners,Gender #
+Aimee,18-May-19,Temple Newsam Parkrun,00:51:39,,35.08%,256,3.11,JW10,50,213,220,95
+Aimee,13-Jul-19,Conyngham Hall Parkrun,00:46:04,CB Conyngham,39.33%,243,3.11,JW10,80,175,179,66
+Aimee,18-Aug-18,Barnsley Parkrun,00:45:18,,39.99%,318,3.11,JW10,100,200,203,66
+Aimee,27-Apr-19,Temple Newsam Parkrun,00:44:17,CB Temple Newsam,40.91%,256,3.11,JW10,100,153,161,64
+Aimee,01-Jun-19,Barnsley Parkrun,00:44:12,,40.99%,318,3.11,JW10,90,243,259,96
+Aimee,20-Apr-19,Barnsley Parkrun,00:39:43,PB Barnsley,45.61%,318,3.11,JW10,100,192,201,76
+Baylee,31-Mar-18,Barnsley Parkrun,00:34:15,,43.41%,318,3.11,JM11-14,100,136,164,101
+Baylee,18-Aug-18,Barnsley Parkrun,00:28:46,,51.68%,318,3.11,JM11-14,100,123,203,100
+Baylee,20-Apr-19,Barnsley Parkrun,00:27:15,,53.21%,318,3.11,JM11-14,100,81,201,67
+Baylee,01-Jun-19,Barnsley Parkrun,00:26:59,CB Barnsley,53.74%,318,3.11,JM11-14,100,87,259,76
+Baylee,13-Jul-19,Conyngham Hall Parkrun,00:26:32,CB Conyngham,54.65%,243,3.11,JM11-14,,53,179,49
+Baylee,27-Apr-19,Temple Newsam Parkrun,00:26:01,,55.73%,256,3.11,JM11-14,100,40,161,36
+Baylee,18-May-19,Temple Newsam Parkrun,00:25:07,CB Temple Newsam,57.73%,256,3.11,JM11-14,100,45,220,40
+Kate,18-May-19,Temple Newsam Parkrun,00:52:01,PB Temple Newsam,28.93%,256,3.11,VW35-39,100,214,220,96
+Stephen,18-May-19,Temple Newsam Parkrun,00:52:05,PB Temple Newsam,26.21%,256,3.11,VM40-44,90,215,220,119
+Taylor,31-Mar-18,Barnsley Parkrun,00:36:06,,42.38%,318,3.11,JM11-14,100,143,164,103
+Taylor,18-Aug-18,Barnsley Parkrun,00:35:29,,43.12%,318,3.11,JM11-14,100,181,203,129
+Taylor,14-Apr-18,Barnsley Parkrun,00:34:08,,44.82%,318,3.11,JM11-14,100,138,184,98
+Taylor,27-Apr-19,Temple Newsam Parkrun,00:32:04,,46.36%,256,3.11,JM11-14,100,102,161,72
+Taylor,13-Jul-19,Conyngham Hall Parkrun,00:31:52,CB Conyngham,46.65%,243,3.11,JM11-14,100,104,179,77
+Taylor,01-Jun-19,Barnsley Parkrun,00:30:48,,48.27%,318,3.11,JM11-14,100,124,259,100
+Taylor,20-Apr-19,Barnsley Parkrun,00:30:21,CB Barnsley,48.98%,318,3.11,JM11-14,100,126,201,93
+Taylor,18-May-19,Temple Newsam Parkrun,00:29:24,PB Temple Newsam,50.57%,256,3.11,JM11-14,100,107,220,86
+Aimee,20-Jul-19,Conyngham Hall Parkrun,00:51:32,,35.16%,243,3.11,JW10,80,174,176,61
+Baylee,03-Aug-19,Harrogate parkrun,00:24:01,PB Harrogate parkrun,60.37%,82,3.11,JM11-14,100,97,424,89
+Taylor,03-Aug-19,Harrogate parkrun,00:29:54,CB Harrogate,49.72%,82,3.11,JM11-14,100,265,424,192
+Aimee,03-Aug-19,Harrogate parkrun,00:45:39,CB Harrogate,38.44%,82,3.11,JW10,80,415,424,163
+Baylee,07-Sep-19,Conyngham Hall Parkrun,00:29:05,,49.86%,243,3.11,JM11-14,80,92,179,72
+Taylor,07-Sep-19,Conyngham Hall Parkrun,00:29:27,CB Conyngham,50.48%,243,3.11,JM11-14,100,102,179,78
+Baylee,04-Jan-20,Conyngham Hall Parkrun,0:25:38,CB Conyngham,55.33%,243,3.106855,JM11-14,100,45,171,118
+Taylor,04-Jan-20,Conyngham Hall Parkrun,0:32:20,,45.98%,243,3.106855,JM11-14,100,123,171,98
